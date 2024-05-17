@@ -14,12 +14,23 @@ const routes = [
     children:[
       {path: 'home', name: '首页', component: ()=>import('../views/Home.vue')},
       {path: 'user', name: '用户管理', component: ()=>import('../views/User.vue')},
+      {path: 'userprofile', name: '个人信息', component: ()=>import('../views/UserProfile.vue')},
+      {path: 'file', name: '文件管理', component: ()=>import('../views/File.vue')},
     ]
   },
   {
     path: '/about',
     name: 'about',
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+  {
+    path:'/login',
+    name:'login',
+    component:()=>import('../views/Login.vue')
+  },{
+  path:'/register',
+    name:'register',
+    component:()=>import('../views/Register.vue')
   }
 ]
 

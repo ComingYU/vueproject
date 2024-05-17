@@ -10,7 +10,7 @@
   >
     <div style="height:60px;line-height: 60px;text-align: center">
       <img src="../assets/logo.png" alt="" style="width:20px;position:relative;top:5px;margin-right: 5px;">
-      <b style="color:white" v-show="logotextshow">后台管理系统</b>
+      <b style="color:white" v-show="logotextshow">书店管理系统</b>
     </div>
     <el-menu-item index="/">
       <i class="el-icon-house"></i>
@@ -22,7 +22,11 @@
       </template>
         <el-menu-item index="/user">
           <i class="el-icon-s-custom"></i>
-          <span slot="title">用户管理</span>
+          <span slot="title">客户管理</span>
+        </el-menu-item>
+        <el-menu-item index="/file">
+          <i class="el-icon-document"></i>
+          <span slot="title">图书管理</span>
         </el-menu-item>
     </el-submenu>
   </el-menu>
